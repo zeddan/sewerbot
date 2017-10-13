@@ -15,6 +15,17 @@ class Scraper
     @scraped_urls = links.select do |url|
       url.include? "http://foocafe.org/malmoe/events/1"
     end
+    
+    get_event_title
+  end
+
+  def get_event_title(url)
+    page = MetaInspector.new(url)
+
+    # https://api.slack.com/docs/message-formatting#linking_to_urls
+    # <http://www.foo.com|www.foo.com>
+    # parse meeee
+
   end
 
   def compare_old
