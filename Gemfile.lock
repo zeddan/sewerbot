@@ -117,6 +117,7 @@ DEPENDENCIES
   foreman
   metainspector
   puma
+  rack
   rake
   sinatra
   slack-ruby-bot
@@ -125,4 +126,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.15.4
+   1.16.0
