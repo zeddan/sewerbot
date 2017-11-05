@@ -3,8 +3,8 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'dotenv'
 Dotenv.load
 
-require 'sewer-bot'
-require 'web'
+require_relative 'sewer-bot'
+require_relative 'web'
 
 Thread.abort_on_exception = true
 
