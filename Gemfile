@@ -1,16 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rack'
+ruby "2.3.1"
+
 gem 'slack-ruby-bot'
-gem 'celluloid-io'
-gem 'puma'
-gem 'sinatra'
 gem 'dotenv'
+gem 'pry-byebug'
 gem 'metainspector'
+gem "celluloid-io", "~> 0.17"
 
 group :development, :test do
   gem 'rake'
   gem 'foreman'
 end
-
-ruby "2.3.1"
